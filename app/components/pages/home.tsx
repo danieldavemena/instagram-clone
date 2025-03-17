@@ -4,7 +4,7 @@ import Feed from "../ui/feed";
 
 const home = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex flex-row h-screen">
       <Sidebar />
       <Feed />
     </div>
