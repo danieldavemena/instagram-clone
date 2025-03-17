@@ -14,9 +14,36 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
+}
+
+@font-face {
+  font-family: "Instagram Sans";
+  src: url("../public/fonts/InstagramSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Instagram Sans Medium";
+  src: url("../public/fonts/InstagramSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Instagram Sans Light";
+  src: url("../public/fonts/InstagramSans-Light.ttf");
+}
+
+.insta {
+  font-family: "Instagram Sans";
+}
+
+.insta-medium {
+  font-family: "Instagram Sans Medium";
+}
+
+.insta-light {
+  font-family: "Instagram Sans Light";
 }
 
 body {
