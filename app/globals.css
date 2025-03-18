@@ -34,6 +34,11 @@
   src: url("../public/fonts/InstagramSans-Light.ttf");
 }
 
+@font-face {
+  font-family: "Instagram Condensed Bold";
+  src: url("../public/fonts/InstagramSansCondensed-Bold.ttf");
+}
+
 .insta {
   font-family: "Instagram Sans";
 }
@@ -44,6 +49,10 @@
 
 .insta-light {
   font-family: "Instagram Sans Light";
+}
+
+.insta-condensed-bold {
+  font-family: "Instagram Condensed Bold";
 }
 
 body {
