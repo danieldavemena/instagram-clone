@@ -14,11 +14,12 @@ const asideuser: React.FC<props> = ({
   button,
   isUser,
 }) => {
-  var size = "text-[15px]";
+  const user = isUser;
+  var size;
 
   useEffect(() => {
     const userChecker = () => {
-      if (isUser) {
+      if (user) {
         size = "text-[15px]";
       } else {
         size = "text-[10px]";
@@ -33,9 +34,7 @@ const asideuser: React.FC<props> = ({
       <div className="ml-0 bg-red-400 rounded-[500px] size-10.75"></div>
       <div className="ml-3 mr-auto flex flex-col justify-end items-start text-sm">
         <p className=" -mb-[2.5px]">{username}</p>
-        <p className={`insta-light font-bold text-zinc-400 ${size}`}>
-          {description}
-        </p>
+        <p className={`insta font-bold text-zinc-400 ${size}`}>{description}</p>
       </div>
       <p className="ml-auto text-xs text-blue-500 mr-5">{button}</p>
     </div>

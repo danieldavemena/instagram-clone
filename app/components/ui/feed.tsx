@@ -47,14 +47,47 @@ const feed = () => {
             <p className="ml-0 mr-auto text-zinc-400">Suggested for you</p>
             <p className="mr-5 ml-auto text-[11px] font-bold">See All</p>
           </div>
-          <div className="pl-[5px]">
+          <div className="pl-[5px] [&>:not(:first-child)]:mt-[17px]">
             <Asideuser
-              username="notyour_dayv"
+              username="apple_pie"
               description="Followed by blabla"
               button="Follow"
               isUser={false}
             />
+            <Asideuser
+              username="ninja_bisaya"
+              description="Followed by univerityNiDanilo"
+              button="Follow"
+              isUser={false}
+            />
+            <Asideuser
+              username="indian_baktol"
+              description="Followed by arabongKalabaw"
+              button="Follow"
+              isUser={false}
+            />
+            <Asideuser
+              username="allen.kalbo21"
+              description="Followed by markbakla"
+              button="Follow"
+              isUser={false}
+            />
+            <Asideuser
+              username="arabongKalabaw"
+              description="Followed by patinginNgTitle"
+              button="Follow"
+              isUser={false}
+            />
           </div>
+          <footer className="mt-10.5">
+            <p className="insta font-light text-[12.2px] leading-5 text-zinc-400">
+              About ꞏ Help ꞏ Press ꞏ API ꞏ Jobs ꞏ Privacy ꞏ Terms ꞏ Locations ꞏ
+              Language ꞏ Meta Verified
+            </p>
+            <p className="mt-4 insta font-light text-[12.2px] leading-5 text-zinc-400">
+              © 2025 INSTAGRAM FROM META
+            </p>
+          </footer>
         </aside>
       </div>
     </section>

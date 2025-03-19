@@ -20,39 +20,12 @@
 }
 
 @font-face {
-  font-family: "Instagram Sans";
-  src: url("../public/fonts/InstagramSans-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Instagram Sans Medium";
-  src: url("../public/fonts/InstagramSans-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Instagram Sans Light";
-  src: url("../public/fonts/InstagramSans-Light.ttf");
-}
-
-@font-face {
-  font-family: "Instagram Condensed Bold";
-  src: url("../public/fonts/InstagramSansCondensed-Bold.ttf");
+  font-family: "PT Sans";
+  src: url("../public/fonts/pt-sans/PT_Sans-Web-Regular.ttf");
 }
 
 .insta {
-  font-family: "Instagram Sans";
-}
-
-.insta-medium {
-  font-family: "Instagram Sans Medium";
-}
-
-.insta-light {
-  font-family: "Instagram Sans Light";
-}
-
-.insta-condensed-bold {
-  font-family: "Instagram Condensed Bold";
+  font-family: "PT Sans";
 }
 
 body {
