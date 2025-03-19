@@ -17,24 +17,24 @@ const asideuser: React.FC<props> = ({
   const user = isUser;
   var size;
 
-  useEffect(() => {
-    const userChecker = () => {
-      if (user) {
-        size = "text-[15px]";
-      } else {
-        size = "text-[10px]";
-      }
-    };
+  const userChecker = () => {
+    if (user) {
+      size = "text-[14.5px]";
+    } else {
+      size = "text-[12.3px]";
+    }
+  };
 
-    userChecker;
-  }, []);
+  userChecker();
 
   return (
     <div className="flex flex-row items-center justify-center">
       <div className="ml-0 bg-red-400 rounded-[500px] size-10.75"></div>
       <div className="ml-3 mr-auto flex flex-col justify-end items-start text-sm">
         <p className=" -mb-[2.5px]">{username}</p>
-        <p className={`insta font-bold text-zinc-400 ${size}`}>{description}</p>
+        <p className={`insta font-light text-zinc-400 ${size}`}>
+          {description}
+        </p>
       </div>
       <p className="ml-auto text-xs text-blue-500 mr-5">{button}</p>
     </div>

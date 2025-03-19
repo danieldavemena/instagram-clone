@@ -79,12 +79,12 @@ const feed = () => {
               isUser={false}
             />
           </div>
-          <footer className="mt-10.5">
-            <p className="insta font-light text-[12.2px] leading-5 text-zinc-400">
+          <footer className="mt-[40px]">
+            <p className="insta font-light text-[12.2px] leading-5 text-zinc-500">
               About ꞏ Help ꞏ Press ꞏ API ꞏ Jobs ꞏ Privacy ꞏ Terms ꞏ Locations ꞏ
               Language ꞏ Meta Verified
             </p>
-            <p className="mt-4 insta font-light text-[12.2px] leading-5 text-zinc-400">
+            <p className="mt-4 insta font-light text-[12.2px] leading-5 text-zinc-500">
               © 2025 INSTAGRAM FROM META
             </p>
           </footer>
