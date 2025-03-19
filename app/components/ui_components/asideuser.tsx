@@ -36,7 +36,9 @@ const asideuser: React.FC<props> = ({
           {description}
         </p>
       </div>
-      <p className="ml-auto text-xs text-blue-500 mr-5">{button}</p>
+      <p className="ml-auto font-semibold text-[11px] text-blue-500 mr-5">
+        {button}
+      </p>
     </div>
   );
 };

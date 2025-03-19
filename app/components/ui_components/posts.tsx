@@ -12,14 +12,16 @@ const posts: React.FC<props> = ({ user, location, image, profileImage }) => {
   return (
     <div className="w-[471px] flex flex-col gap-[4.5px] items-start mb-5">
       <div className="flex flex-row gap-2 items-center transform translate-y-[1px] cursor-default  ml-0 mr-auto">
-        <Image
-          src={profileImage}
-          alt="profile"
-          className="ml-[3px] mb-1  rounded-3xl border-3 p-[1.5px] border-red-400 size-10"
-        />
-        <div className="text-[14.5px] mt-1">
-          <h1 className="font-bold ">{user}</h1>
-          <p className="text-[11.5px] transform -translate-y-1">{location}</p>
+        <div className="ml-[3px] mb-1  rounded-3xl p-[2px] bg-gradient-to-tr from-yellow-300 via-red-600 to-purple-500 size-10">
+          <Image
+            src={profileImage}
+            alt="profile"
+            className="border-2 object-cover size-9 border-black rounded-3xl"
+          />
+        </div>
+        <div className=" mt-1 ">
+          <h1 className="font-bold  text-[13px] -translate-y-[2px]">{user}</h1>
+          <p className="text-[11.5px] transform -translate-y-1 ">{location}</p>
         </div>
       </div>
       <div className="flex flex-col gap-2">

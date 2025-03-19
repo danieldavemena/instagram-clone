@@ -1,10 +1,14 @@
 import React from "react";
 import Posts from "../ui_components/posts";
 import Asideuser from "../ui_components/asideuser";
+import Storyuser from "../ui_components/storyuser";
 import Yna from "@/public/images/Yna.png";
 import Ursac from "@/public/images/ursac.jpg";
 import Wheel from "@/public/images/wheel.png";
 import DpNiDanilo from "@/public/images/dpNiDanilo.jpg";
+import Bebe from "@/public/images/Bebe.jpg";
+import Palpitate from "@/public/images/Palpitate.png";
+import Profile from "@/public/images/profile.jpg";
 
 const feed = () => {
   return (
@@ -12,16 +16,28 @@ const feed = () => {
       <div className="flex flex-row  justify-center">
         <div className="flex flex-col gap-10 items-center transform -translate-x-1">
           <div className="flex flex-row h-15 gap-4 mt-6 ">
-            <div className=" bg-red-400 rounded-[290px] size-16"></div>
-            <div className=" bg-red-400 rounded-[500px] size-16"></div>
-            <div className=" bg-red-400 rounded-[500px] size-16"></div>
-            <div className=" bg-red-400 rounded-[500px] size-16"></div>
-            <div className=" bg-red-400 rounded-[500px] size-16"></div>
-            <div className=" bg-red-400 rounded-[500px] size-16"></div>
-            <div className=" bg-red-400 rounded-[500px] size-16"></div>
-            <div className=" bg-red-400 rounded-[500px] size-16"></div>
+            <Storyuser profileImage={Yna} username="callme_yna" />
+            <Storyuser profileImage={Ursac} username="ursac" />
+            <Storyuser
+              profileImage={DpNiDanilo}
+              username="universityNiDanilo"
+            />
+            <Storyuser profileImage={Bebe} username="yna_cutiepie" />
+            <Storyuser profileImage={Yna} username="callme_yna" />
+            <Storyuser profileImage={Ursac} username="ursac" />
+            <Storyuser
+              profileImage={DpNiDanilo}
+              username="universityNiDanilo"
+            />
+            <Storyuser profileImage={Bebe} username="yna_cutiepie" />
           </div>
           <div className="mt-3 transform -translate-x-1">
+            <Posts
+              user="isnotdave_"
+              image={Palpitate}
+              location=""
+              profileImage={Profile}
+            />
             <Posts
               user="callme_yna"
               location="Mambugan"
@@ -44,7 +60,9 @@ const feed = () => {
             isUser
           />
           <div className="flex mb-3.5 flex-row items-center mt-6 text-[14px]  ">
-            <p className="ml-0 mr-auto text-zinc-400">Suggested for you</p>
+            <p className="ml-0 mr-auto font-semibold text-zinc-400">
+              Suggested for you
+            </p>
             <p className="mr-5 ml-auto text-[11px] font-bold">See All</p>
           </div>
           <div className="pl-[5px] [&>:not(:first-child)]:mt-[17px]">
