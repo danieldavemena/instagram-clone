@@ -13,9 +13,9 @@ const sidebutton: React.FC<props> = ({ icon, label, selected }) => {
 
   const selectionChecker = () => {
     if (isSelected) {
-      weight = "font-semibold";
+      weight = "font-semibold tracking-[1px]";
     } else {
-      weight = "";
+      weight = "font-light";
     }
   };
 
@@ -30,7 +30,7 @@ const sidebutton: React.FC<props> = ({ icon, label, selected }) => {
       />
       <a
         href=""
-        className={`ml-[16px] ${weight} transform -translate-y-[2px] tracking-[1px] text-[16px]`}
+        className={`ml-[16px] ${weight} transform -translate-y-[2px]  text-[16px]`}
       >
         {label}
       </a>
