@@ -26,11 +26,11 @@ const sidebutton: React.FC<props> = ({ icon, label, selected }) => {
       <Image
         src={icon}
         alt="icon"
-        className="size-[22.5px] transform -translate-y-[3px]"
+        className="w-[22.5px] h-[23px] transform -translate-y-[3px]"
       />
       <a
         href=""
-        className={`ml-[16px] ${weight} transform -translate-y-[2px]  text-[16px]`}
+        className={`ml-[16px] ${weight} transform -translate-y-[2px] text-[16px]`}
       >
         {label}
       </a>

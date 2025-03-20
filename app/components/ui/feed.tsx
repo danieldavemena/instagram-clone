@@ -16,14 +16,14 @@ const feed = () => {
       <div className="flex flex-row  justify-center">
         <div className="flex flex-col gap-10 items-center transform -translate-x-1">
           <div className="flex flex-row h-15 gap-4 mt-6 ">
-            <Storyuser profileImage={Yna} username="callme_yna" />
+            <Storyuser profileImage={Yna} username="callmee_yna" />
             <Storyuser profileImage={Ursac} username="ursac" />
             <Storyuser
               profileImage={DpNiDanilo}
               username="universityNiDanilo"
             />
             <Storyuser profileImage={Bebe} username="yna_cutiepie" />
-            <Storyuser profileImage={Yna} username="callme_yna" />
+            <Storyuser profileImage={Yna} username="callmee_yna" />
             <Storyuser profileImage={Ursac} username="ursac" />
             <Storyuser
               profileImage={DpNiDanilo}
@@ -39,7 +39,7 @@ const feed = () => {
               profileImage={Profile}
             />
             <Posts
-              user="callme_yna"
+              user="callmee_yna"
               location="Mambugan"
               image={Yna}
               profileImage={Wheel}

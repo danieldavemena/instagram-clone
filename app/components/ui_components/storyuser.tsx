@@ -16,7 +16,7 @@ const storyuser: React.FC<props> = ({ profileImage, username }) => {
           className="border-2 size-15 border-black object-cover rounded-[290px]"
         />
       </div>
-      <p className="text-[12.2px] mt-[4px]  truncate w-16 text-center">
+      <p className="text-[12px] mt-[4px]  truncate w-16 text-center">
         {username}
       </p>
     </div>
