@@ -22,7 +22,7 @@ const sidebutton: React.FC<props> = ({ icon, label, selected }) => {
   selectionChecker();
 
   return (
-    <li className="flex h-[50px] px-[12px]  flex-row items-center justify-start">
+    <li className="cursor-pointer flex h-[50px] px-[12px]  flex-row items-center justify-start">
       <Image
         src={icon}
         alt="icon"

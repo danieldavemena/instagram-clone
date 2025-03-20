@@ -63,7 +63,9 @@ const feed = () => {
             <p className="ml-0 mr-auto font-semibold text-zinc-400">
               Suggested for you
             </p>
-            <p className="mr-5 ml-auto text-[11px] font-bold">See All</p>
+            <p className="mr-5 ml-auto text-[11px] font-bold cursor-pointer">
+              See All
+            </p>
           </div>
           <div className="pl-[5px] [&>:not(:first-child)]:mt-[17px]">
             <Asideuser
