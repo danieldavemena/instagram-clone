@@ -14,7 +14,7 @@ const feed = () => {
   return (
     <section className="ml-64 flex flex-1 w-full flex-col items-center">
       <div className="flex flex-row  justify-center">
-        <div className="flex flex-col gap-10 items-center transform -translate-x-1">
+        <div className="flex flex-col gap-10 items-center transform -translate-x-[5px]">
           <div className="flex flex-row h-15 gap-4 mt-6 ">
             <Storyuser profileImage={Yna} username="callmee_yna" />
             <Storyuser profileImage={Ursac} username="ursac" />

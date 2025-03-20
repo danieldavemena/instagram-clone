@@ -22,15 +22,15 @@ const sidebutton: React.FC<props> = ({ icon, label, selected }) => {
   selectionChecker();
 
   return (
-    <li className="flex h-[50px] flex-row items-center justify-start">
+    <li className="flex h-[50px] px-[12px]  flex-row items-center justify-start">
       <Image
         src={icon}
         alt="icon"
-        className="w-[22.5px] h-[23px] transform -translate-y-[3px]"
+        className="w-[22px] h-[23px] transform translate-x-[1px]"
       />
       <a
         href=""
-        className={`ml-[16px] ${weight} transform -translate-y-[2px] text-[16px]`}
+        className={`ml-[16px] ${weight} transform translate-y-[1.4px] translate-x-[1.5px] text-[16px]`}
       >
         {label}
       </a>
