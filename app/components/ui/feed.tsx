@@ -9,13 +9,15 @@ import DpNiDanilo from "@/public/images/dpNiDanilo.jpg";
 import Bebe from "@/public/images/Bebe.jpg";
 import Palpitate from "@/public/images/Palpitate.png";
 import Profile from "@/public/images/profile.jpg";
+import Octo from "@/public/images/likha-octo.png";
+import YnaProfile from "@/public/images/yna_profile.jpg";
 
 const feed = () => {
   return (
     <section className="ml-64 flex flex-1 w-full flex-col items-center">
       <div className="flex flex-row  justify-center">
         <div className="flex flex-col gap-10 items-center transform -translate-x-[5px]">
-          <div className="flex flex-row h-15 gap-4 mt-6 ">
+          <div className="flex flex-row h-15 gap-4 mt-6 w-[624px] [&>:not(:first-child)]:-ml-[4px] transform -translate-x-[2px]">
             <Storyuser profileImage={Yna} username="callmee_yna" />
             <Storyuser profileImage={Ursac} username="ursac" />
             <Storyuser
@@ -40,9 +42,15 @@ const feed = () => {
             />
             <Posts
               user="callmee_yna"
+              image={Octo}
+              location="Sa Bahay"
+              profileImage={YnaProfile}
+            />
+            <Posts
+              user="callmee_yna"
               location="Mambugan"
               image={Yna}
-              profileImage={Wheel}
+              profileImage={YnaProfile}
             />
             <Posts
               user="universityNiDanilo"

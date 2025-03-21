@@ -11,7 +11,7 @@ interface props {
 const posts: React.FC<props> = ({ user, location, image, profileImage }) => {
   return (
     <div className="w-[471px] flex flex-col gap-[4.5px] items-start mb-5">
-      <div className="flex flex-row gap-2 items-center transform translate-y-[1px] cursor-default  ml-0 mr-auto">
+      <div className="flex flex-row gap-2 w-full items-center transform translate-y-[1px] cursor-default  ml-0 mr-auto">
         <div className="ml-[3px] mb-1  rounded-3xl p-[2px] bg-gradient-to-tr from-yellow-300 via-red-600 to-purple-500 size-10">
           <Image
             src={profileImage}
@@ -20,8 +20,17 @@ const posts: React.FC<props> = ({ user, location, image, profileImage }) => {
           />
         </div>
         <div className=" mt-1 ">
-          <h1 className="font-bold  text-[13px] -translate-y-[2px]">{user}</h1>
+          <h1 className="font-bold flex flex-row items-center text-[13px] transform -translate-y-[2px]">
+            {user}
+            <span className="ml-[7px] text-zinc-400 font-light flex flex-row items-center">
+              <p className="text-[8px] transform -translate-y-[0.5px]">●</p>
+              <p className="ml-[5px] tracking-[1px]">7h</p>
+            </span>
+          </h1>
           <p className="text-[11.5px] transform -translate-y-1 ">{location}</p>
+        </div>
+        <div className="text-[6.5px] tracking-[2px] transform -translate-y-[3px] translate-x-[1px] mr-0 ml-auto">
+          ●●●
         </div>
       </div>
       <div className="flex flex-col gap-2">
