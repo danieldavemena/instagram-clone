@@ -1,5 +1,9 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import Comments from "@/public/ui_vectors/comments.svg";
+import Likes from "@/public/ui_vectors/likes.svg";
+import Share from "@/public/ui_vectors/share.svg";
+import Save from "@/public/ui_vectors/save.svg";
 
 interface props {
   user: string;
@@ -33,16 +37,29 @@ const posts: React.FC<props> = ({ user, location, image, profileImage }) => {
           ●●●
         </div>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-[12px]">
         <Image
           src={image}
           alt="image"
           className="transform translate-x-[2px] p-[1px]  rounded-md border-1 border-zinc-800"
         />
-        <div className="ml-1 text-md flex flex-row align-center gap-6">
-          <a href="">1</a>
-          <a href="">2</a>
-          <a href="">3</a>
+        <div className="ml-1 text-md flex flex-row items-center w-full gap-[20px]">
+          <a href="">
+            <Image src={Likes} alt="" className="size-[23px] object-contain" />
+          </a>
+          <a href="">
+            <Image
+              src={Comments}
+              alt=""
+              className="size-[23px] object-contain"
+            />
+          </a>
+          <a href="">
+            <Image src={Share} alt="" className="size-[23px] object-contain" />
+          </a>
+          <a href="" className="mr-[6px] ml-auto">
+            <Image src={Save} alt="" className="size-[23px] object-contain " />
+          </a>
         </div>
       </div>
     </div>
