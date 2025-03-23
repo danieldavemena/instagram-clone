@@ -26,7 +26,7 @@ const sidebutton: React.FC<props> = ({ icon, label, selected }) => {
       <Image
         src={icon}
         alt="icon"
-        className="w-[22px] h-[23px] transform translate-x-[1px]"
+        className="not-dark:invert w-[22px] h-[23px] transform translate-x-[1px]"
       />
       <a
         href=""

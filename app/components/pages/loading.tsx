@@ -1,43 +1,21 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
-import { Suspense } from "react";
-import ReactPlayer from "react-player";
-// import BackgroundVideo from "next-video/background-video";
-// import loadinganimation from "@/videos/Loading.mp4";
+import React, { useRef, useState } from "react";
+import { useMediaQuery } from "@react-hook/media-query";
 
 const loading = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const videos = {
+    dark: "/loading/Loading.mp4",
+    light: "/loading/Loading-light.mp4",
+  };
 
-  useEffect(() => {
-    const playVideo = () => {
-      if (videoRef.current) {
-        videoRef.current.play().catch((err) => {
-          console.error("Autoplay failed:", err);
-        });
-      }
-    };
-
-    if (document.readyState === "complete") {
-      playVideo();
-    } else {
-      window.addEventListener("load", playVideo);
-    }
-
-    return () => window.removeEventListener("load", playVideo);
-  }, []);
+  const isDark = useMediaQuery("(prefers-color-scheme: dark)");
 
   return (
     <main>
       <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div className="flex flex-col items-center w-[600px]">
-          {/* <BackgroundVideo
-            loop={false}
-            src={loadinganimation}
-            autoPlay
-            className="object-cover"
-          /> */}
-          <video ref={videoRef} autoPlay playsInline muted>
-            <source src="/loading/Loading.mp4" />
+          <video autoPlay playsInline muted>
+            <source src={isDark ? videos.dark : videos.light} />
           </video>
           <p className="text-center text-zinc-400 text-sm  transform -translate-y-10">
             This project is an independent UI clone made for educational

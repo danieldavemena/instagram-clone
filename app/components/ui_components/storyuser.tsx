@@ -13,7 +13,7 @@ const storyuser: React.FC<props> = ({ profileImage, username }) => {
         <Image
           src={profileImage}
           alt="profile"
-          className="border-2 size-15 border-black object-cover rounded-[290px]"
+          className="border-2 size-15 border-[var(--background)] object-cover rounded-[290px]"
         />
       </div>
       <p className="text-[12px] mt-[4px] truncate w-[68px] text-center">

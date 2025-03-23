@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
-/* :root {
+:root {
   --background: #ffffff;
-  --foreground: #171717;
-} */
+  --foreground: #000000;
+}
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
-    --foreground: #ededed;
+    --foreground: #ffffff;
   }
-} */
+}
 
 @font-face {
   font-family: "PT Sans";
@@ -22,11 +22,11 @@
 }
 
 body {
-  /* background: var(--background);
+  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif; */
-  background-color: black;
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: black;
+  color: white; */
 }
 
 .loader {
@@ -45,14 +45,14 @@ body {
 }
 .loader:before {
   animation: ball1 1s infinite;
-  background-color: #fff;
+  background-color: var(--foreground);
   box-shadow: 30px 0 0 #b9b9b9;
   margin-bottom: 10px;
 }
 .loader:after {
   animation: ball2 1s infinite;
   background-color: #b9b9b9;
-  box-shadow: 30px 0 0 #fff;
+  box-shadow: 30px 0 0 var(--foreground);
 }
 
 @keyframes rotate {
@@ -84,15 +84,15 @@ body {
 
 @keyframes ball2 {
   0% {
-    box-shadow: 30px 0 0 #fff;
+    box-shadow: 30px 0 0 var(--foreground);
   }
   50% {
-    box-shadow: 0 0 0 #fff;
+    box-shadow: 0 0 0 var(--foreground);
     margin-top: -20px;
     transform: translate(15px, 15px);
   }
   100% {
-    box-shadow: 30px 0 0 #fff;
+    box-shadow: 30px 0 0 var(--foreground);
     margin-top: 0;
   }
 }

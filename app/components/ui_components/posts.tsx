@@ -20,7 +20,7 @@ const posts: React.FC<props> = ({ user, location, image, profileImage }) => {
           <Image
             src={profileImage}
             alt="profile"
-            className="border-2 object-cover size-9 border-black rounded-3xl"
+            className="border-2 object-cover size-9 border-[var(--background)] rounded-3xl"
           />
         </div>
         <div className=" mt-1 ">

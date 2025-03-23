@@ -13,14 +13,14 @@ import Dashboard from "@/public/ui_vectors/dashboard.svg";
 
 const sidebar = () => {
   return (
-    <nav className="fixed w-[244.5px] left-0 insta h-screen p-3 pt-[2.5em] list-none    bg-black border-r-1 border-r-zinc-800 ">
+    <nav className="fixed w-[244.5px] left-0 insta h-screen p-3 pt-[2.5em] list-none    bg-[var(--background)] border-r-1 border-r-zinc-800 not-dark:border-r-zinc-200  ">
       <Image
         src={LogoWhite}
-        className="w-25.5 h-10 mt-[30px] mb-[32px] object-cover translate-x-[12px] transform -translate-y-[35px] cursor-pointer"
+        className="not-dark:invert w-25.5 h-10 mt-[30px] mb-[32px] object-cover translate-x-[12px] transform -translate-y-[35px] cursor-pointer"
         alt="Instagram"
       />
       <p className="absolute top-15 left-25 text-[10px] ">clone by Dave</p>
-      <div className="[&>li]:py-[10px] [&>li]:mb-[6px] [&>li]:text-[1.07em] [&>li]:pr-[7em] [&>li]:hover:bg-zinc-900 [&>li]:rounded-lg transform -translate-y-[39px]">
+      <div className="[&>li]:py-[10px] [&>li]:mb-[6px] [&>li]:text-[1.07em] [&>li]:pr-[7em] [&>li]:hover:bg-zinc-900 not-dark:[&>li]:hover:bg-zinc-100 [&>li]:rounded-lg transform -translate-y-[39px]">
         <Sidebutton icon={Home} label="Home" selected={true} />
         <Sidebutton icon={Search} label="Search" selected={false} />
         <Sidebutton icon={Explore} label="Explore" selected={false} />
