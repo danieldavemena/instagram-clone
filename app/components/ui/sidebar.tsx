@@ -10,6 +10,7 @@ import Messages from "@/public/ui_vectors/messages.svg";
 import Notifications from "@/public/ui_vectors/notifications.svg";
 import Create from "@/public/ui_vectors/create.svg";
 import Dashboard from "@/public/ui_vectors/dashboard.svg";
+import Profile from "@/public/images/profile.jpg";
 
 const sidebar = () => {
   return (
@@ -21,18 +22,50 @@ const sidebar = () => {
       />
       <p className="absolute top-15 left-25 text-[10px] ">clone by Dave</p>
       <div className="[&>li]:py-[10px] [&>li]:mb-[6px] [&>li]:text-[1.07em] [&>li]:pr-[7em] [&>li]:hover:bg-zinc-900 not-dark:[&>li]:hover:bg-zinc-100 [&>li]:rounded-lg transform -translate-y-[39px]">
-        <Sidebutton icon={Home} label="Home" selected={true} />
-        <Sidebutton icon={Search} label="Search" selected={false} />
-        <Sidebutton icon={Explore} label="Explore" selected={false} />
-        <Sidebutton icon={Reels} label="Reels" selected={false} />
-        <Sidebutton icon={Messages} label="Messages" selected={false} />
+        <Sidebutton icon={Home} label="Home" selected={true} isicon={true} />
+        <Sidebutton
+          icon={Search}
+          label="Search"
+          selected={false}
+          isicon={true}
+        />
+        <Sidebutton
+          icon={Explore}
+          label="Explore"
+          selected={false}
+          isicon={true}
+        />
+        <Sidebutton icon={Reels} label="Reels" selected={false} isicon={true} />
+        <Sidebutton
+          icon={Messages}
+          label="Messages"
+          selected={false}
+          isicon={true}
+        />
         <Sidebutton
           icon={Notifications}
           label="Notifications"
           selected={false}
+          isicon={true}
         />
-        <Sidebutton icon={Create} label="Create" selected={false} />
-        <Sidebutton icon={Dashboard} label="Dashboard" selected={false} />
+        <Sidebutton
+          icon={Create}
+          label="Create"
+          selected={false}
+          isicon={true}
+        />
+        <Sidebutton
+          icon={Dashboard}
+          label="Dashboard"
+          selected={false}
+          isicon={true}
+        />
+        <Sidebutton
+          icon={Profile}
+          label="Profile"
+          selected={false}
+          isicon={false}
+        />
       </div>
     </nav>
   );

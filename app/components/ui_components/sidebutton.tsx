@@ -5,11 +5,14 @@ interface props {
   icon: StaticImageData;
   label: string;
   selected: boolean;
+  isicon: boolean;
 }
 
-const sidebutton: React.FC<props> = ({ icon, label, selected }) => {
+const sidebutton: React.FC<props> = ({ icon, label, selected, isicon }) => {
   const isSelected = selected;
+  const isIcon = isicon;
   var weight;
+  var border;
 
   const selectionChecker = () => {
     if (isSelected) {
@@ -17,16 +20,22 @@ const sidebutton: React.FC<props> = ({ icon, label, selected }) => {
     } else {
       weight = "font-light";
     }
+
+    if (isIcon) {
+      border = "";
+    } else {
+      border = "overflow-hidden object-fill rounded-full";
+    }
   };
 
   selectionChecker();
 
   return (
-    <li className="cursor-pointer flex h-[50px] px-[12px]  flex-row items-center justify-start">
+    <li className="cursor-pointer flex h-[50px] px-[12px] flex-row items-center justify-start">
       <Image
         src={icon}
         alt="icon"
-        className="not-dark:invert w-[22px] h-[23px] transform translate-x-[1px]"
+        className={`not-dark:invert w-[22px] h-[23px] ${border} transform translate-x-[1px]`}
       />
       <a
         href=""
