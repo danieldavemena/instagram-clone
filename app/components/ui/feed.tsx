@@ -89,8 +89,8 @@ const feed = () => {
               isUser={false}
             />
             <Asideuser
-              username="indian_baktol"
-              description="Followed by arabongKalabaw"
+              username="sinobato"
+              description="Followed by sankana"
               button="Follow"
               isUser={false}
             />
@@ -101,7 +101,7 @@ const feed = () => {
               isUser={false}
             />
             <Asideuser
-              username="arabongKalabaw"
+              username="sankana"
               description="Followed by patinginNgTitle"
               button="Follow"
               isUser={false}
